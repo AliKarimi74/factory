@@ -1,7 +1,11 @@
 ﻿<Application x:Class="clientFactory.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<<<<<<< HEAD
              StartupUri="Views/Initialize form.xaml">
+=======
+             StartupUri="Views/start.xaml">
+>>>>>>> a18e679e34173baa2423789fd279639be2582448
     <Application.Resources>
          
     </Application.Resources>
