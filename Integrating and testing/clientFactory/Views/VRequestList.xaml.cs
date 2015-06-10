@@ -19,24 +19,26 @@ namespace clientFactory
     /// </summary>
     public partial class VRequestList : Window
     {
+        public CRequestController controller;
+
+        public List<RequestModel> inbox_item;
+        public List<RequestModel> outbox_item;
+
         public VRequestList()
         {
             InitializeComponent();
         }
 
-        private void MakeRequestEvent_Click(object sender, RoutedEventArgs e)
+        public void ShowForm()
         {
-
+            Inbox_DG.ItemsSource = inbox_item;
+            Outbox_DG.ItemsSource = outbox_item;
+            Show();
         }
 
         private void BackEvent_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void FollowEvent_Click(object sender, RoutedEventArgs e)
-        {
-
+            Close();
         }
 
         private void ShowEvent_Click(object sender, RoutedEventArgs e)

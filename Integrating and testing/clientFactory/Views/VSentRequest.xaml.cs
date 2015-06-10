@@ -60,23 +60,8 @@ namespace clientFactory
 
         private void Follow_Btn_Click(object sender, RoutedEventArgs e)
         {
-            controller.FollowRequest();
+            controller.FollowRequest(current_request.Id);
         }
 
-        public void ErrorMessage(string message)
-        {
-            MessageBox.Show(message,
-                "خطا",
-                MessageBoxButton.OK,
-                MessageBoxImage.Exclamation);
-        }
-
-        public void SuccessMessage(string message)
-        {
-            MessageBox.Show(message,
-                "نتیجه",
-                MessageBoxButton.OK,
-                MessageBoxImage.Information);
-        }
     }
 }
